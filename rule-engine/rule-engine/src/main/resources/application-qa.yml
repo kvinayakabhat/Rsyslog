@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:mysql://cloud-db.qa-sclera.com:3306/rule_engine_cloud?createDatabaseIfNotExist=true
+    username: admin
+    password: H1f78tnajhg&*
+
+
+
+server:
+  domain: https://qa-app.sclera.com
+
+
+sclera:
+  server:
+    cors:
+      allowedOrigin: '*'
+    bff:
+      url: http://sclera-bff-server:8000

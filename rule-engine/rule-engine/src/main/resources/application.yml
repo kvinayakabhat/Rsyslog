@@ -1,0 +1,29 @@
+server:
+  port: 4002
+  error:
+    whitelabel:
+      enabled: false
+    path: /error
+
+
+spring:
+
+    hikari:
+      auto-commit: true
+      minimum-idle: 1
+      maximum-pool-size: 10
+      idle-timeout: 600000
+      pool-name: SpringBootJPAHikariCP
+      max-lifetime: 1800000
+      connection-timeout: 30000
+    jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: com.sclera.rule_engine.syslog.config.MySQLCustomDialect
+
+
+
